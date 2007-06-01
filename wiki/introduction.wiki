@@ -1,7 +1,5 @@
 #labels Featured
 
-= Introduction =
-
 Globalite is meant to be a breed of the best internationalization/localization plugins available for Rails. 
 
 Globalite provides you with a 3-in-1 solution: 
@@ -84,5 +82,4 @@ Get a distance of time in words localized.
 	{{{distance_of_time_in_words(Time.mktime(2005, 6, 4, 15), Time.now)}}}
 
 Active record errors are automatically rendered in the locale language
-
 
