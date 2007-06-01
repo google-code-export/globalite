@@ -1,0 +1,32 @@
+#labels Featured,Phase-Design
+= Rails Localization =
+
+
+Localize a time object by using a predefined format (defined in the date_helper_time_formats variable that you can find  in globalite/lang/rails/[lang].yml)
+
+        {{{Globalite.current_language = :fr}}}
+	{{{Time.now.l(:long) }}} 
+
+Localize a date object by using a predefined format (defined in the date_helper_date_formats variable that you can find  in globalite/lang/rails/[lang].yml)
+	
+	{{{Date.today.l}}}
+
+In your views, create a select box with a list of all countries(listed in the locale language):
+	{{{country_options_for_select	}}}
+
+In your views, create a select box with a list of all the months(listed in the locale language) with the current month selected:
+	{{{select_month(Time.now)}}}
+	
+In your views, create a set of html select-tags (one for year, month, day, hour, and minute):
+	{{{select_datetime}}}
+	
+In your views, create a set of html select-tags (one for year, month, and day):
+	{{{select_date}}}
+	
+Get a number returned in currency, for instance if the locale was set to 'fr' the returned value would be 123,00 € but if the locale was set to 'en-US' it would return $123.00
+	{{{number_to_currency(123)}}}	
+
+Get a distance of time in words localized.
+	{{{distance_of_time_in_words(Time.mktime(2005, 6, 4, 15), Time.now)}}}
+
+Active record errors are automatically rendered in the locale language
