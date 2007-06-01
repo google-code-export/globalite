@@ -1,0 +1,50 @@
+#labels Featured,Phase-Implementation
+=UI l10n=
+
+So you want to localize your User Interface?
+
+Start by creating a lang folder at the root of your project. Add your localization files in the lang/ui folder. The localization file is a simple yaml file with a key and a value, for instance:
+
+{{{localization_key: my translation}}}
+
+Declare the current locale or language somewhere in your code:
+	{{{Globalite.current_language :fr}}}
+Localize a key:
+	{{{:localization_key.l }}}
+or 
+	{{{:localization_key.localize}}}
+
+Easy, isn't?
+
+Advanced users can also do more:
+
+You can also pass an optional localization string only used if the localization is missing
+	{{{:missing_localization_key.l("text used if the key is not localized yet")}}}
+
+You can also pass values to the localization, and the translator can do whatever he wants with them, here is the ruby code:
+	
+	{{{:welcome_user.l_with_args({:user => 'Matt'})}}}
+
+or you can use the alternate syntax:
+        {{{:welcome_user.l('hello world(replacement string)',{:user => 'Matt'})}}} 
+
+would render "Welcome Matt!"
+
+Here is our localization key in our en-US.yml file:
+   {{{welcome_user: Welcome {user}! }}}
+
+Here is our the same localization key in our fr-FR.yml file:	
+   {{{welcome_user: {user}, bienvenue!}}}
+
+Note that variables can be used in any order the translator wants
+
+in French-French(fr-FR) the localized string will look like that:
+   {{{ Matt, bienvenue! }}}
+
+in American English(en-US), the localized string will look like that:
+   {{{ Welcome Matt! }}}
+
+
+
+
+
