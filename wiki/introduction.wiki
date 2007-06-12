@@ -14,10 +14,10 @@ The developer can pass dynamic values to be used in the localization.
 
 Built-in Rails localization in:
 
- - English (UK)
- - English (US)
- - French (France)
- - Spanish (Generic)
- - Italian
+ * English (UK)
+ * English (US)
+ * French (France)
+ * Spanish (Generic)
+ * Italian
 
 Submit your lang file in your own language to mattAimonetti@gmail.com
