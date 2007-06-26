@@ -1,0 +1,6 @@
+#labels Featured
+= Translators =
+  * *Marcus Derencius*   derencius_AT_gmail_DOT_com (Brazilian Portuguese translation)
+
+
+
