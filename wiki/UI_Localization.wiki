@@ -8,7 +8,7 @@ Start by creating a lang folder at the root of your project. Add your localizati
 {{{localization_key: my translation}}}
 
 Declare the current locale or language somewhere in your code:
-	{{{Globalite.current_language :fr}}}
+	{{{Globalite.language = :fr}}}
 Localize a key:
 	{{{:localization_key.l }}}
 or 
@@ -43,7 +43,6 @@ in French-French(fr-FR) the localized string will look like that:
 
 in American English(en-US), the localized string will look like that:
    {{{ Welcome Matt! }}}
-
 
 
 
