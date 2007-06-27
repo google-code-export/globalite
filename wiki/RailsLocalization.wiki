@@ -4,7 +4,7 @@
 
 Localize a time object by using a predefined format (defined in the date_helper_time_formats variable that you can find  in globalite/lang/rails/[lang].yml)
 
-        {{{Globalite.current_language = :fr}}}
+        {{{Globalite.language = :fr}}}
 	{{{Time.now.l(:long) }}} 
 
 Localize a date object by using a predefined format (defined in the date_helper_date_formats variable that you can find  in globalite/lang/rails/[lang].yml)
@@ -29,4 +29,7 @@ Get a number returned in currency, for instance if the locale was set to 'fr' th
 Get a distance of time in words localized.
 	{{{distance_of_time_in_words(Time.mktime(2005, 6, 4, 15), Time.now)}}}
 
-Active record errors are automatically rendered in the locale language
+Active record errors are automatically rendered in the locale language.
+
+
+Submit your Rails language file in your own language to mattAimonetti@gmail.com
