@@ -1,0 +1,37 @@
+#labels Featured,Phase-Support
+Because there's a difference between describing how to use a plugin and how to actually use the plugin in a real application I wrote a very simple and rough Rails sample application with a fully localized User Interface:
+
+http://farm2.static.flickr.com/1347/691265267_bbc167f7ab.jpg
+
+Looking at the code you will find out how to:
+
+ * use a different css per locale (language/country)
+ * use a different picture per locale
+ * set a default css/picture if the translator doesn't specify one
+ * UI localization
+ * rails core localization examples
+ * create a select box of available UI translations
+ * get/set the locale only a specific user so other users start by seeing the default translation
+ * use a translation with many dynamic arguments
+ * nested translation
+
+note: I froze Edge for this sample app (it wasn't required, Globalite works well with older version of Rails). 
+
+To install and run the app, just do the following:
+
+    $ svn checkout http://globalite.googlecode.com/svn/sample/ui globalite-sample-app
+
+edit config/database.yml
+
+    $ rake db:create
+    
+    $ rake db:migrate
+    
+    $ ruby script/server
+    
+    
+Don't hesitate to leave [http://www.railsontherun.com/2007/7/2/globalite-sample-application#comments a comment] , submit a Rails core localization file in your language or [http://code.google.com/p/globalite/issues/list submit a bug]
+
+
+
+
