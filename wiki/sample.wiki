@@ -21,7 +21,7 @@ To install and run the app, just do the following:
 
     $ svn checkout http://globalite.googlecode.com/svn/sample/ui globalite-sample-app
 
-edit config/database.yml
+edit config/database.example and rename it config/database.yml
 
     $ rake db:create
     
@@ -31,7 +31,6 @@ edit config/database.yml
     
     
 Don't hesitate to leave [http://www.railsontherun.com/2007/7/2/globalite-sample-application#comments a comment] , submit a Rails core localization file in your language or [http://code.google.com/p/globalite/issues/list submit a bug]
-
 
 
 
