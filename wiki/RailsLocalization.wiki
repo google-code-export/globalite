@@ -31,5 +31,7 @@ Get a distance of time in words localized.
 
 Active record errors are automatically rendered in the locale language.
 
+http://farm2.static.flickr.com/1372/975159961_ff7a8b1752_o.jpg
+
 
 Submit your Rails language file in your own language to mattAimonetti@gmail.com
