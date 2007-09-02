@@ -1,0 +1,37 @@
+#labels Featured
+How to use pluralization in your translations
+
+= Introduction =
+
+Let's say you want your application to support some sort of pluralization. For instance you have created a farm management application and you want to display the amount of animals available.
+
+
+= Details =
+
+Let's say you want to display the amount of cows available.
+
+In your view, use:
+{{{<%= :cows_amount.l_with_args({:count => @cows.count}) %>}}}
+
+In your translation file you would need a localization key as follows:
+{{{cow_amount:  pluralize{{count}, cow} in the farm!}}}
+    
+But sometimes pluralization isn't that simple, so pluralize has a trick. Here is an example:
+
+_View_:
+{{{<%= :geeze_amount.l_with_args({:count => @geese.count}) %>}}}
+
+_localization file_:
+{{{geese_amount:  we have pluralize{{geese_count}, goose, geese} in the farm!}}}
+
+Notice how we passed the singular and plural form of our word to pluralize.
+
+
+By pushing the pluralization to the translator, I  believe we offer more flexibility for a  smoother translation.
+
+This solution was inspired by a discussion I had with with Ivan while we were discussing ActiveRecord error messages:
+
+"It's very difficult to just translate "prohibited this" and "from being saved" to Chinese, cause the resulting sentence will look like a machine translated one without making much sense. Not to mention Chinese handles pluralization differently, we pretty much don't have it. For example, we'll use the same word for "person" and "people", no difference. So to me, it makes sense just to replace the whole thing with one simple header message that says "Invalid attributes!" in Chinese."
+
+
+
