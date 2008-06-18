@@ -1,7 +1,7 @@
 #labels Featured,Phase-Implementation
 new git way (requires a version newer than rails 2.0.2 http://dev.rubyonrails.org/changeset/9049)
 
-{{script/plugin install git://github.com/matta/globalite.git }}
+{{script/plugin install git://github.com/mattetti/globalite.git }}
 
 old svn way (old version)
 	{{{script/plugin install http://globalite.googlecode.com/svn/trunk/}}}
